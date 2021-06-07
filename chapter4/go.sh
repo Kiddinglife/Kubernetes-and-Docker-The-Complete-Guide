@@ -41,7 +41,7 @@ echo -e "***********************************************************************
 tput setaf 2
 cat << 'EOF' >> ~/.profile
 export GOROOT=/usr/local/go
-export GOPATH=~/go/kind
+export GOPATH=~/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 EOF
 echo -e "Variables added"
