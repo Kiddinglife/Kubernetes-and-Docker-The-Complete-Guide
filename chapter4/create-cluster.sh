@@ -16,9 +16,11 @@ sudo snap install kubectl --classic
 tput setaf 5
 #install helm and jq
 echo -e "\n \n*******************************************************************************************************************"
-echo -e "Step 2: Install Helm3 and jq"
+echo -e "Step 2: Install Snapd Skaffold Helm3 and jq"
 echo -e "*******************************************************************************************************************"
 tput setaf 3
+sudo apt-get install snapd
+sudo snap install skaffold
 sudo snap install helm --classic
 sudo snap install jq --classic
 

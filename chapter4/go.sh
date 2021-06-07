@@ -31,6 +31,7 @@ echo -e "\n*********************************************************************
 echo -e "Moving Go binary to /usr/local"
 echo -e "*******************************************************************************************************************"
 tput setaf 2
+sudo rm -rf /usr/local/go
 sudo mv go /usr/local
 echo -e "Go binary move complete"
 

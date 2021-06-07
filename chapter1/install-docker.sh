@@ -43,7 +43,9 @@ echo -e "\n \n******************************************************************
 echo -e "Enabling and Starting Docker - Will require you to enter your sudo password"
 echo -e "*******************************************************************************************************************"
 tput setaf 2
-sudo systemctl enable docker && systemctl start docker
+sudo systemctl enable docker
+sudo systemctl enable containerd.service
+systemctl start docker
 
 tput setaf 3
 echo -e "\n \n*******************************************************************************************************************"
@@ -52,4 +54,7 @@ echo -e "Respawning shell for new groups - you will need to enter your password"
 echo -e "*******************************************************************************************************************"
 tput setaf 2
 exec su -l $USER
+
+# need rebbot to make docker group works in vm environment
+sudo reboot
 
