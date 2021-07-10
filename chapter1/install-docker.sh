@@ -56,5 +56,4 @@ tput setaf 2
 exec su -l $USER
 
 # need rebbot to make docker group works in vm environment
-sudo reboot
-
+# sudo reboot
